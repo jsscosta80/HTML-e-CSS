@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    <link href="css/contato.css" rel="stylesheet">    
+</head>
+
+<body>
+    <header>
+        <img src="./img/ford-96.png" alt="Logo da Ford" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lançamento.html">Lançamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+
+    <main>
+        <img id="storm" src="./img/storm.jpg" alt="Imagem Storm">
+
+        <section id="form">
+            <form id="form-contato">
+                <p>Sobre Você:</p>
+
+                <div class="form-group">
+                    <label for="campoNome">Nome:</label>
+                    <input type="text" id="campoNome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="campoEmail">E-mail:</label>
+                    <input type="email" id="campoEmail" name="email" placeholder="email@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="campoTelefone">Telefone:</label>
+                    <input type="tel" id="campoTelefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="campoSelecao">Motivo do contato:</label>
+                    <select id="campoSelecao" name="motivo" required>
+                        <option value="">Selecione...</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="solicitacao">Solicitação</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="campoMensagem">Mensagem:</label>
+                    <textarea id="campoMensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                </div>
+
+                <button id="btn-enviar" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>       
+        <ul>
+            <a href="https://www.facebook.com/FordBrasil/" title="Facebook"><img src="img/facebook-50.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@ford" title="YouTube"><img src="img/youtube-squared-50.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/fordbrasil/" title="Instagram"><img src="img/instagram-logo-50.png" alt="I"></a>
+        </ul>
+
+        <p>© 2025, Ford Brasil. Todos os direitos reservados</p>
+        <img style="padding-right: 16px ;" src="img/ford-96.png" alt="">
+    </footer>
+
+</body>
+</html>
