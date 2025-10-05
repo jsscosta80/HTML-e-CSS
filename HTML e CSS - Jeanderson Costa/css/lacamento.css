@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+	
+}
+header{
+    background: #1b357e;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: rem;
+    position: relative;
+}
+header nav ul li a{
+    color: white;
+    font-weight: bold;
+}
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+footer {
+    background: #1b357e;    
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    display: flex;    
+    bottom: 0;
+    padding: 7px;
+    color: white;
+    position: fixed;
+}
+/* Centraliza tudo dentro do <main> */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Estiliza e centraliza o iframe com fundo preto */
+iframe {
+  
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: black;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* Estiliza a tabela */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Botão estilizado */
+#btn-enviar {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  iframe {
+    max-width: 100%;
+  }
+
+  table, tr, td, th {
+    display: block;
+    width: 100%;
+  }
+
+  td, th {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
